@@ -7,15 +7,15 @@
 class Ctcli < Formula
   desc "Command-line client for Cathedral sandboxes, Boxes and Workers"
   homepage "https://cathedral.computer"
-  url "https://cathedral.computer/ctcli/cathedral_cli-0.5.16-py3-none-any.whl"
-  sha256 "d5312947dc28ea14574aaaa1c0466f7e3750a7299d6820c56035ac3b7b2fd56a"
+  url "https://cathedral.computer/ctcli/ctcli-0.5.16-py3-none-any.whl"
+  sha256 "3b4503d345e17ff5cd14bd0087e19690e3278f6d92f73d2101824287f5be4413"
 
   depends_on "python@3.13"
 
   def install
     python = formula_opt_bin("python@3.13")/"python3.13"
     # Homebrew keeps a .whl as one file; a wheel is a zip of the package.
-    system python, "-m", "zipfile", "-e", "cathedral_cli-#{version}-py3-none-any.whl", libexec
+    system python, "-m", "zipfile", "-e", "ctcli-#{version}-py3-none-any.whl", libexec
     (bin/"ctcli").write_env_script python, "-m ctcli", PYTHONPATH: libexec
   end
 
