@@ -9,8 +9,8 @@
 class Ctcli < Formula
   desc "Command-line client for Cathedral sandboxes, Boxes and Workers"
   homepage "https://cathedral.computer"
-  url "https://cathedral.computer/ctcli/ctcli-0.6.1-py3-none-any.whl"
-  sha256 "6b28e24a9b4a965976a4f1287ceac02e17f7c0be5521a6a278c332e0d3bf7b54"
+  url "https://cathedral.computer/ctcli/ctcli-0.6.2-py3-none-any.whl"
+  sha256 "25413123edd9d4157621b6729b42268f001ee7decdb12bc61940e2e42890da26"
 
   depends_on "python@3.14"
 
